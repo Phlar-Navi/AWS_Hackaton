@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+
+# Env files
+.env
+.env.*
+
+# Django
+db.sqlite3
+/media/
+staticfiles/
+*.pot
+*.pyc
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Mac
+.DS_Store
+
+# Node / React / React Native
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Expo / React Native
+.expo/
+.expo-shared/
+android/
+ios/
+*.apk
+*.aab
+
+# AWS credentials
+.aws/
