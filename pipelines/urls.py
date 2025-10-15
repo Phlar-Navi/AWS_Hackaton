@@ -4,4 +4,5 @@ from . import views
 urlpatterns = [
     path("analyze/", views.analyze, name="analyze"),
     path("retry/", views.retry, name="retry"),
+    path("latest-run/", views.get_latest_run, name="latest_run"), 
 ]
