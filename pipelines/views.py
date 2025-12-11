@@ -43,12 +43,13 @@ def analyze(request):
         
         # Analyser avec l'IA
         analysis = analyze_logs(logs)
-        
         return JsonResponse({
             "repo": repo,
             "run_id": run_id,
-            "analysis": analysis
+            "analysis": analysis,
+            "model_used": analysis.get("model_used", "unknown")
         })
+
     except Exception as e:
         return JsonResponse({"error": str(e)}, status=500)
 
